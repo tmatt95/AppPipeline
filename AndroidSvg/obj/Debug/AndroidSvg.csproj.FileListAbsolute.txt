@@ -1,0 +1,3 @@
+C:\Users\matthew\Downloads\Xamarin_Android___Google_I_O_2014\AndroidSvg\obj\Debug\MonoAndroid,Version=v5.0.AssemblyAttributes.cs
+C:\Users\matthew\Downloads\Xamarin_Android___Google_I_O_2014\AndroidSvg\obj\Debug\AndroidSvg.csproj.AssemblyReference.cache
+C:\Users\matthew\Downloads\Xamarin_Android___Google_I_O_2014\AndroidSvg\obj\Debug\stamp\_BuildLibraryImportsCache.stamp
