@@ -42,3 +42,11 @@ jobs:
       run: msbuild App1.sln /p:Configuration=Release /p:Configuration=Release /t:PackageForAndroid
       env:
         Configuration: Release
+    
+    # Publish APK
+    - name: 'Upload Artifact'
+    uses: actions/upload-artifact@v2
+    with:
+      name: APK
+      path: bin/Release/com.companyname.app1.apk
+      retention-days: 1
