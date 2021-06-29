@@ -33,12 +33,12 @@ jobs:
 
     # Restore the application to populate the obj folder with RuntimeIdentifiers
     - name: Restore the application
-      run: msbuild GoogleIO2014Master.sln /t:Restore /p:Configuration=Release
+      run: msbuild App1.sln /t:Restore /p:Configuration=Release
       env:
         Configuration: Release
 
     # Build the application to populate the obj folder with RuntimeIdentifiers
     - name: Build the application
-      run: msbuild GoogleIO2014Master.sln /p:Configuration=Release /p:Configuration=Release /t:PackageForAndroid
+      run: msbuild App1.sln /p:Configuration=Release /p:Configuration=Release /t:PackageForAndroid
       env:
         Configuration: Release
