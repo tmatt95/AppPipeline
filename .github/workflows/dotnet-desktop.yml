@@ -42,7 +42,7 @@ jobs:
 
     # Build the application to populate the obj folder with RuntimeIdentifiers
     - name: Build the application
-      run: msbuild App1.sln /p:Configuration=Release /p:Configuration=Release /t:PackageForAndroid
+      run: msbuild App1.sln /p:Configuration=Release /t:PackageForAndroid
       env:
         Configuration: Release
     
