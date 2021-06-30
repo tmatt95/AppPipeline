@@ -20,7 +20,7 @@ jobs:
 
     # Zipalign signed APK
     - name: Sign APK
-      run:  & 'C:\Program Files (x86)\Android\android-sdk\build-tools\30.0.2\zipalign.exe' -f -v 4 App1/bin/Release/signed.apk final.apk
+      run:  \& 'C:\Program Files (x86)\Android\android-sdk\build-tools\30.0.2\zipalign.exe' -f -v 4 App1/bin/Release/signed.apk final.apk
       env:
         Configuration: Release
 
