@@ -17,7 +17,13 @@ jobs:
                              # https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on
 
     steps:
-    
+
+    # Zipalign signed APK
+    - name: Sign APK
+      run: C:\Program Files(x86)\Android\android-sdk\build-tools\23.0.1\zipalign -f -v 4 App1/bin/Release/signed.apk final.apk
+      env:
+        Configuration: Release
+
     # Checks out the code from git.
     - name: Checkout
       uses: actions/checkout@v2
