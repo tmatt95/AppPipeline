@@ -47,9 +47,7 @@ jobs:
         Configuration: Release
     
     # Publish APK
-    - name: 'Upload Artifact'
-      uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v2
       with:
         name: APK
-        path: bin/Release/com.companyname.app1.apk
-        retention-days: 1
+        path: bin/ # or path/to/artifact
